@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* Default text color */
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    color: #8e44ad; /* Purple heading color */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-bottom: 20px; /* Space below buttons */
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #8e44ad; /* Purple button color */
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #9b59b6; /* Lighter purple on hover */
+    transform: scale(1.05);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between; /* Align features and image side by side */
+    align-items: flex-start; /* Align items to the top */
+    margin-top: 30px;
+}
+
+.features {
+    width: 50%; /* Width for feature box area */
+    display: flex;
+    flex-direction: column; /* Stack feature boxes vertically */
+}
+
+.feature-box {
+    background-color: rgba(44, 44, 62, 0.8); /* Dark gray with transparency for feature boxes */
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px 0; /* Space between feature boxes */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-box.h2 {
+    color: #8e44ad; /* Purple for feature box headings */
+    font-size: 1.5rem;
+}
+
+.feature-box p {
+    font-size: 1rem;
+    color: #ccc; /* Light gray for feature box text */
+}
+
+.feature-box:hover {
+    transform: translateY(-5px); /* Lift the box */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Apply shadow */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.feature-box.hovered {
+    transform: translateY(-5px); /* Maintain lift on click */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Maintain shadow on click */
+}
+
+.web-dev-support {
+    background: linear-gradient(to right, rgba(106, 27, 154, 0.8), rgba(0, 0, 0, 0.8)); /* Black-purple gradient */
+}
+
+.ai-support {
+    background: linear-gradient(to right, rgba(106, 27, 154, 0.8), rgba(0, 0, 0, 0.8)); /* Black-purple gradient */
+}
+
+.editor-image-container {
+    width: 40%; /* Width for the image container */
+    margin-left: 20px; /* Space between features and image */
+}
+
+.editor-image {
+    width: 100%;
+    max-width: 100%; /* Ensure image scales correctly */
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.editor-image:hover {
+    transform: scale(1.05);
+}

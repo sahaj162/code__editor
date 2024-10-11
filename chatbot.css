@@ -1,0 +1,105 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    height: 100vh; /* Full height of the viewport */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container Styling */
+.container {
+    width: 100%; /* Full width of the viewport */
+    text-align: center; /* Center text within the container */
+}
+
+/* Title Styling */
+.title {
+    color: white;
+    font-size: 32px;
+    margin: 20px 0; /* Space around title (top and bottom) */
+    opacity: 0; /* Start invisible for animation */
+    transform: translateY(-20px); /* Start position for animation */
+    animation: fadeInUp 1s forwards; /* Animation for title */
+}
+
+/* Response Area Styling */
+.response {
+    margin-top: 10px; /* Space between title and response */
+    color: white;
+    font-size: 18px;
+    text-align: left; /* Align text to the left */
+    max-width: 600px; /* Limit response area width */
+    margin: 0 auto; /* Center response area horizontally */
+    height: 300px; /* Fixed height for response area */
+    overflow-y: auto; /* Enable vertical scroll if content overflows */
+    padding: 10px; /* Padding for response area */
+}
+
+/* Search Bar Container */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* Fixed position for the search bar */
+    bottom: 20px; /* Position it at the bottom with some space */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for perfect centering */
+}
+
+/* Search Bar Styling */
+.search-bar {
+    width: 400px; /* Initial width of the search bar */
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    font-size: 18px;
+    background-color: #1e1e1e; /* Dark background for the search bar */
+    color: white;
+    box-shadow: 0 4px 10px rgba(128, 0, 128, 0.6); /* Purple box shadow */
+    transition: width 0.3s ease, padding 0.3s ease; /* Transition for width and padding */
+}
+
+/* Enlarged Search Bar on Focus */
+.search-bar:focus {
+    width: 500px; /* Enlarged width */
+    padding: 20px; /* Increased padding */
+    outline: none;
+    box-shadow: 0 0 15px rgba(128, 0, 128, 0.8); /* Bright purple glow on focus */
+}
+
+/* Placeholder styling */
+.search-bar::placeholder {
+    color: #aaa; /* Light gray placeholder text */
+}
+
+/* Search Button Styling */
+.search-button {
+    padding: 15px 25px;
+    background-color: #800080; /* Purple button color */
+    border: none;
+    border-radius: 25px; /* Rounded button */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Added transition for button */
+}
+
+/* Search Button Hover Effect */
+.search-button:hover {
+    background-color: #9933cc; /* Darker purple on hover */
+}
+
+/* Animation for title */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

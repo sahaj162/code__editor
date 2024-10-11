@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="editor.css">
+    <title>Advanced Code Editor</title>
+</head>
+<body>
+    <div class="editor-container">
+        <!-- Left side: Editor and options -->
+        <div class="editor-section">
+            <div class="editor-options">
+                <button id="saveFileBtn">☁️ Save</button>
+                <button id="deleteFileBtn">🗑️ Delete</button>
+                <button id="runBtn">▶🏃 Run Code</button>
+                <select id="savedFilesList">
+                    <option>Select saved project</option>
+                </select>
+            </div>
+
+            <div class="file-nav">
+                <div id="htmlTab" class="file active">HTML</div>
+                <div id="cssTab" class="file">CSS</div>
+                <div id="jsTab" class="file">JS</div>
+            </div>
+
+            <textarea id="htmlEditor" class="editor" placeholder="Write HTML code..."></textarea>
+            <textarea id="cssEditor" class="editor hidden" placeholder="Write CSS code..."></textarea>
+            <textarea id="jsEditor" class="editor hidden" placeholder="Write JS code..."></textarea>
+        </div>
+
+        <!-- Resizer -->
+        <div class="resizer"></div>
+
+        <!-- Right side: Output window -->
+        <div class="output-section">
+            <h2>Output</h2>
+            <iframe id="outputFrame"></iframe>
+        </div>
+    </div>
+
+    <script src="editor.js"></script>
+</body>
+</html>
